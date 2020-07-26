@@ -1,0 +1,24 @@
+{
+  "name": "slack-image-convert",
+  "version": "1.0.0",
+  "description": "Converts images to other formats inside of slack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/lukec11/slack-image/convert"
+  },
+  "author": "lukec11 <me@lukec.me>",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^2.1.1",
+    "form-data": "^3.0.0",
+    "fs": "0.0.1-security",
+    "jimp": "^0.14.0",
+    "node-fetch": "^2.6.0",
+    "stream": "0.0.2",
+    "util": "^0.12.3"
+  }
+}
