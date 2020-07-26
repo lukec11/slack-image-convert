@@ -71,7 +71,11 @@ const convertImage = async (fileName, nameNoExt, newType) => {
     fs.unlinkSync(fileName);
   } catch (err) {
     fs.unlinkSync(fileName);
-    throw err;
+    if (err.includes("Unsupported MIME type")) {
+      throw "We don't support that file type!";
+    } else {
+      throw err;
+    }
   }
 };
 
